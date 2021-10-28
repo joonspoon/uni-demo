@@ -1,0 +1,26 @@
+{
+  "name": "uni-demo",
+  "version": "1.0.0",
+  "description": "Trying out basic swaps on Uniswap",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/joonspoon/uni-demo.git"
+  },
+  "author": "joonspoon",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joonspoon/uni-demo/issues"
+  },
+  "homepage": "https://github.com/joonspoon/uni-demo#readme",
+  "dependencies": {
+    "@uniswap/v2-core": "^1.0.1",
+    "@uniswap/v2-periphery": "^1.1.0-beta.0"
+  }
+}
