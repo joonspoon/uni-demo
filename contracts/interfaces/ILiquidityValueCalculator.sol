@@ -1,10 +1,5 @@
 pragma solidity ^0.6.6;
 
-import './interfaces/ILiquidityValueCalculator.sol';
-
-contract LiquidityValueCalculator is ILiquidityValueCalculator {
-    address public factory;
-    constructor(address factory_) public {
-        factory = factory_;
-    }
+interface ILiquidityValueCalculator {
+    function computeLiquidityShareValue(uint liquidity, address tokenA, address tokenB) external returns (uint tokenAAmount, uint tokenBAmount);
 }
