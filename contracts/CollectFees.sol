@@ -16,15 +16,10 @@ contract CollectFees {
     }
 
     function withdrawEther() external onlyOwner {
-        address payable ownerAddress = payable(msg.sender);
-        ownerAddress.transfer(getBalance());
+        payable(msg.sender).transfer(address(this).balance);
     }
 
-    function getBalance() private onlyOwner view returns (uint) {
-        return address(this).balance;
-    }
-
-     function getBalanceInEther() public view returns (uint) {
+    function getBalanceInEther() public view returns (uint) {
         return address(this).balance/1 ether;
     }
 
