@@ -53,7 +53,7 @@ import fs from 'fs';
 const uniswapRouterContract = JSON.parse(fs.readFileSync('./build/contracts/uniswap-router.json', 'utf8'));
 const uniswapRouterAddress = "0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D";
 const rinkebyProvider = ethers.providers.getDefaultProvider('rinkeby');
-const privateKey = "ecec553b70043b611e297bebd1a1bf86d055118495b3061cd5607761702d4cec"; // do not disclose the private key
+const privateKey = "[ADD PRIVATE KEY]";
 const ethersWallet = new ethers.Wallet(privateKey, rinkebyProvider);
 const uniswap = new ethers.Contract(uniswapRouterAddress, uniswapRouterContract.abi, ethersWallet);
 
