@@ -1,6 +1,6 @@
 # 🦄🦄🦄 
 This code uses the Uniswap SDK to perform a basic swap from ETH to UNI using the Uniswap V2 Router.
-The router automatically wraps ETH so that it can be traded on Uniswap.
+The router automatically wraps ETH as ERC-20 so that it can be traded on Uniswap.
 
 ```
 git clone https://github.com/joonspoon/uni-demo
