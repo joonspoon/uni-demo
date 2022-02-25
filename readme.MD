@@ -1,5 +1,5 @@
 # 🦄🦄🦄 
-This code will run a basic swap from ETH to UNI using the Uniswap V2 Router.
+This code uses the Uniswap SDK to perform a basic swap from ETH to UNI using the Uniswap V2 Router.
 The router automatically wraps ETH so that it can be traded on Uniswap.
 
 ```
